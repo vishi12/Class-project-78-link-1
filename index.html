@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Arrays</title>
+    </head>
+    <body>
+        <h1>Student activity</h1>
+        <br>
+        <h4 id="fruit_names" ></h4>
+        <h4 id= "first_fruit"></h4>
+        <h4 id= "second_fruit"></h4>
+        <h4 id= "fruit_length"></h4>
+        <h4 id= "loop"></h4>
+        <h4 id= "push"></h4>
+    </body>
+    <script>
+        var fruit= ["strawberry", "orange", "apple", "watermelon", "avacado"];
+        console.log(fruit);
+        document.getElementById("fruit_names").innerHTML= fruit;
+        var first_fruit= fruit[0];
+        console.log(first_fruit);
+        document.getElementById("first_fruit").innerHTML= first_fruit;
+        var second_fruit= fruit[1];
+        console.log(second_fruit);
+        document.getElementById("second_fruit").innerHTML= second_fruit;
+        var length= fruit.length;
+        console.log(length)
+        document.getElementById("fruit_length").innerHTML= length;
+        var array_value= "";
+        for (i = 0; i < fruit.length; i++) {
+            console.log(fruit[i]);
+            array_value = array_value + fruit[i] + "<br>"; }
+            document.getElementById("loop").innerHTML = array_value;
+        fruit.push= ("mango");
+        console.log(fruit)
+        document.getElementById("push").innerHTML= fruit;
+    </script>
+</html>
